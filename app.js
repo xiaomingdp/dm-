@@ -3,7 +3,6 @@ var session_key = null;
 var iv = null;
 var encryptedData = null;
 var js_code = null;
-
 App({
   data: {
     servsers: "https://www.dudao360.com",
