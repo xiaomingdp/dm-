@@ -1,0 +1,33 @@
+<!--pages/shuaixuan/shuaixuan.wxml-->
+    <view class="head">
+        <view class="top">
+          <view class="touxiang"style="background:url({{touxiang}}); no-repeat;background-size:100%">
+          </view>
+          <view class="headname">{{wxname}}</view>
+        </view>
+
+
+        <view class="fenshu">{{zong}}分</view>
+        <view class="rt">
+           <view class="jibai">在"新三板董秘助手考试"中</view>
+           <view class="jibai">击败全国<text class="jiujiu">{{percent}}%</text>的用户</view>
+        </view>
+    </view>
+<view class="immn">
+      
+  <image src="https://www.dudao360.com/tmp/bgg.png" class="imm"></image>
+  <button open-type="share"  class="fenxaing">分享</button>
+
+  <view class="chakan" class="chakan" bindtap="chakan">查看详情>></view>
+
+  <image src="https://www.dudao360.com/tmp/qpo.png" class="ee" id="hk" bindtap="siliao"></image>
+  
+
+  <view class="" id="rt">
+           <view class="jibai" style="padding-bottom:10rpx;font-family:'宋体'">关注“新三板董秘助手”公众号</view>
+           <view class="jibai" style="font-family:'Arial'">get新技能</view>
+    </view>
+  
+</view>
+
+

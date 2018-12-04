@@ -1,0 +1,23 @@
+.logn input{margin: 55rpx auto;padding-left: 19px;}
+.logn{width:100%;}
+.wenzi{text-align: center;margin: 30px auto;font-size: 28PX;color:#353535;font-family:"微软雅黑"}
+.username{font-size: 12px;height: 90rpx;padding-right: 55rpx;}
+.password{font-size: 12px;padding-top: 20rpx;padding-right: 55rpx;}
+.ss{width:90%;margin: 0 auto;border-bottom: 1px solid #f08f8d;height:90rpx;line-height: 90rpx;position: relative;}
+.ddd{float: left;font-weight: bold;font-family:"微软雅黑"}
+
+
+.p1{width:100%;margin: 0 auto;text-align: center;padding-top: 30rpx;color:#e85552;font-weight:900;}
+.div{width:100%;height:auto;}
+.div1{width:400rpx;height:400rpx;margin: 0 auto;text-align: center;position: relative;}
+.ksishi{position: absolute;left:268rpx;bottom: 134rpx;color:#fff;}
+.imgpo{width:50rpx;height:50rpx;float: left;padding-top: 20rpx;}
+.line{width:2rpx;height:60rpx;background: #e5e5e5;position: absolute;top:15rpx;left:66rpx;}
+.btn{width:88%;margin: 0 auto;height:94rpx;margin-top: 60rpx;background: rgba(230, 67, 64, 0.3);color: #fff;}
+.w1{float: left;padding-top: 40rpx;padding-left: 6%;color: #dd2c32;font-size: 26rpx;}
+.w2{float: right; padding-top: 40rpx;padding-right: 6%;color: #dd2c32;font-size: 26rpx;}
+.shanchu{position: absolute;top:30rpx;right:11rpx;width:40rpx;height:40rpx;}
+.shanchuu{display: none;}
+.yanjing{position: absolute;top:30rpx;right:11rpx;width:40rpx;height:40rpx;}
+.yanjingg{display: none;}
+.btnn{width:88%;margin: 0 auto;height:94rpx;margin-top: 60rpx;background: rgba(230, 67, 64, 1);color: #fff;}

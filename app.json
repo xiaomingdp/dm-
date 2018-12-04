@@ -1,0 +1,74 @@
+{
+  "pages":[
+   
+     "pages/mach/mach",
+    "pages/denglu/denglu",
+    "pages/jieguo/jieguo",
+      "pages/zhuce/zhuce",
+      "pages/index1/index1",
+      "pages/datiye/datiye",
+      "pages/logs/logs",
+      "pages/fenxiang/fenxiang",
+    "pages/wangji/wangji",
+      "pages/logs1/logs1",
+    
+      "pages/lishi/lishi",
+      "pages/shuaixuan/shuaixuan"
+  ],
+    
+     
+  
+
+  "window":{
+
+
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#e64340",
+  "navigationBarTitleText": "新三板董秘资格考试",
+  "navigationBarTextStyle": "#fff",
+  "enablePullDownRefresh": false
+
+  },
+
+   "tabBar": {
+     
+    "list": [{
+      "pagePath": "pages/index1/index1",
+      "borderStyle":"#000",
+      "text": "测试",
+      "selectedColor":"#e85552",
+       "color":"#e85552",
+      "iconPath":"pages/img/测试nor.png",
+      "selectedIconPath":"pages/img/测试sel.png"
+      
+     
+      
+    },
+    {
+      "pagePath": "pages/lishi/lishi",
+      "borderStyle":"#000",
+      "text": "历史",
+      "color":"#e85552",
+       "selectedColor":"#e85552",
+      "iconPath":"pages/img/历史nor.png",
+      "selectedIconPath":"pages/img/历史sel.png"
+      
+    },
+     {
+      "pagePath": "pages/logs/logs",
+      "text": "我的",
+       "color":"#e85552",
+        "selectedColor":"#e85552",
+      "iconPath":"pages/img/我的nor.png",
+      "selectedIconPath":"pages/img/我的sel.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+
+ 
+}
+

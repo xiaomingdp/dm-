@@ -1,0 +1,18 @@
+.head{width:100%;height:120px;border-bottom: 1px solid #f2f6f8;position: relative;background: #fff;}  
+.touxiang{width:160rpx;height:160rpx;border-radius: 50%;border: 1px solid #999;text-align: center;margin: 20px auto;background-position: 50% 50%;margin-bottom: 10rpx;} 
+.img{width:100%;height:100%;display: block;} 
+.headname{text-align:center;} 
+.list{width:100%;height:120rpx;background: #fff;line-height: 120rpx;border-bottom: 1px solid #f2f6f8;} 
+.left{float: left;padding-left: 20rpx;}
+.right{float: right;padding-right: 20rpx;font-size: 30rpx;color:#999;}  
+#list{margin-bottom:40rpx;} 
+.all{width:100%;height:100%;background: #f2f6f8;text-align: center} 
+.out{text-align: center !important;color:red;font-weight:500;}  
+page{font-size: 28rpx;}                                                                                                      
+.seachlist1{width:100%;height:120rpx;margin-top: 2rpx;background: #fff;line-height: 120rpx;overflow: hidden;position: relative}
+.input1{float: left;font-size: 24rpx;line-height: 120rpx;height:120rpx;padding-left: 10rpx;box-sizing: border-box;width:520rpx;color:#333;position: absolute;top:0;left:120rpx;text-align: left;}
+.text{float: left;padding-left: 10rpx;color: #333;width:100%;text-align: left;padding-left: 15rpx;}
+.input2{padding-left: 28rpx;}
+.lists{display: none;}
+.ssoo{display: none;}
+.out{background: #e64340;color:#fff;box-sizing: border-box;width:100%;border-radius:15rpx; }

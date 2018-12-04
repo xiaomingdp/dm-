@@ -1,0 +1,201 @@
+.text {
+  float: left;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+}
+
+page {
+  font-size: 28rpx;
+}
+
+html {
+  height: 100%;
+}
+
+.top {
+  width: 100%;
+  height: 70rpx;
+  background: rgba(230, 67, 64, 0.1);
+  position: fixed;
+  color: #fff;
+  z-index: 2;
+  margin-bottom: 70rpx;
+}
+
+.top view {
+  float: left;
+  width: 50%;
+  line-height: 70rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title {
+height:60rpx;
+padding-left:10rpx;
+line-height:74rpx;
+}
+
+.reo {
+  padding: 15rpx;
+  font-size: 24rpx;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 50rpx;
+  color: #333;
+}
+
+.listtitle {
+  padding-left: 15rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.top3 {
+  color: #dd2c32;
+  float: left;
+}
+
+.top1 {
+  float: right;
+  color: #dd2c32;
+}
+
+.sub {
+  width: 100%;
+  height: 100rpx;
+  /* position: absolute; */
+  /* top: 617px; */
+  left: 0;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+}
+
+.sub .left {
+  width: 40%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: #ffbe00;
+  float: left;
+}
+
+.sub .right {
+  width: 60%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: #e64340;
+  float: left;
+  border-radius: 0rpx;
+  outline: none;
+}
+
+.cc {
+  width: 100%;
+  height: 70rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+
+.block {
+  margin-top: 8px;
+}
+
+.c1 {
+  width: 100%;
+  height: 70rpx;
+  background: #fff;
+}
+
+.ling {
+  display: none;
+}
+
+.lingg {
+  display: block;
+}
+
+.tan {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  opacity: 0.7;
+}
+
+.chuang {
+  position: fixed;
+  top: 323rpx;
+  left: 110rpx;
+  background: #fff;
+  width: 550rpx;
+  height: 250rpx;
+  border-radius: 10rpx;
+  color: #333;
+  text-align: center;
+  z-index: 999;
+  border: 2rpx solid #dddbdb;
+}
+
+.t {
+  font-weight: 300;
+  width: 100%;
+  height: 133rpx;
+  border-bottom: 2rpx solid #dddbdb;
+  line-height: 133rpx;
+}
+
+.tijiao {
+  text-align: center;
+  margin-left: 20rpx;
+  float: left;
+  color: #fe002a;
+  font-weight: 900;
+  width: 50%;
+}
+
+.dd {
+  text-align: center;
+  margin-right: 60rpx;
+  float: right;
+  color: #00f93b;
+  font-weight: 900;
+}
+
+.lcxia {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  overflow: hidden;
+}
+
+.tishi {
+  padding-top: 17rpx;
+}
+
+.chuangg {
+  display: none;
+}
+
+#sor {
+  position: relative;
+}
+
+.title1 {
+  display: none;
+}
+
+.classname2 {
+  display: none;
+}

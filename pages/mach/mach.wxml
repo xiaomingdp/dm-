@@ -1,0 +1,6 @@
+<!--pages/mach/mach.wxml-->
+<loading hidden="{{hiddenLoading}}">正在初始化数据</loading>
+<view class="box" hidden="{{hiddenLoading1}}">
+  <view style="padding:15px;color:#fff;">欢迎来到新三板,首次进入需要微信授权</view>
+  <button open-type="getUserInfo">微信授权</button> 
+</view> 

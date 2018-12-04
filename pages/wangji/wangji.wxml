@@ -1,0 +1,43 @@
+
+<view class="div">
+    <view class="div1">
+   
+    <image src="../img/logo_100px.png" style="width:50%;height:50%;color:#fff;margin-top: 80rpx;"></image>
+    <view class="p1">
+ 
+        新三板董秘助手
+        
+        </view>
+
+    </view>
+
+
+</view>
+
+
+
+<view class="logn">
+ 
+  <view class="ss">
+   <image src="https://www.dudao360.com/tmp/40pxshouji.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入11位手机号码" bindinput="namegg" value="{{namegg}}"  bindblur="username" type="number" bindconfirm="mk" bindfocus="fouss"/>
+     <image src="https://www.dudao360.com/tmp/shanchu1.png" class="{{shanchu}}" bindtap="shanchu"></image>
+  </view>
+  <view class="ss">
+   <image src="https://www.dudao360.com/tmp/duanxyanma.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入短信验证码" bindinput="ldok" value="{{ldok}}" bindfocus="ff" bindblur="name" style="padding-right:163rpx;"  type="number" />
+    <button class="{{yanz}}" bindtap="{{yanzyanz }}" disabled="{{fgdisabled}}">{{yanzzi}}</button>
+     
+  </view>
+
+  <button class="{{btn}}" bindtap="yzdl">一键登录</button>
+  
+
+  
+</view>
+
+
+
+

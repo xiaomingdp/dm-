@@ -1,0 +1,27 @@
+<view class="tab">
+    <view class="tab1">考试</view>
+    <view class="tab2">时间</view>
+    <view class="tab3">成绩</view>
+
+
+</view>
+<view class="ddd" wx:for="{{history}}">
+    <view class="list1">
+        <view class="q1">新三板董秘资格模拟考试</view>
+        <view class="q2">{{item.visittime}}</view>
+        <view class="q3">{{item.mark}}分</view>
+
+    </view>
+</view>
+<!--<view class="list1">
+    <view class="q1">新三板董秘资格模拟考试</view>
+    <view class="q2">2017-05-03</view>
+    <view class="q3">85</view>
+
+</view>
+<view class="list1">
+    <view class="q1">新三板董秘资格模拟考试</view>
+    <view class="q2">2017-05-03</view>
+    <view class="q3">85</view>
+
+</view>-->

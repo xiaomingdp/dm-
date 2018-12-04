@@ -1,0 +1,194 @@
+
+<view class="fenshu">{{zong}}分</view>
+<view class="zom border">
+    <view class="rom1"style="width:25%;height:80rpx;"></view>
+     <view class="rom1">一、单选题</view>
+      <view class="rom1">二、多选题</view>
+       <view class="rom1">三、判断题</view>
+
+</view>
+<view class="zom">
+    <view class="manfen">满分</view>
+     <view class="manfen">40分</view>
+      <view class="manfen">40分</view>
+     <view class="manfen">20分</view>
+     
+
+</view>
+<view class="zom">
+    <view class="manfen">得分</view>
+  
+        <view class="manfen dff">{{danxuan}}分</view>
+     
+    <view class="manfen dff">{{duoxuan}}分</view>
+ <view class="manfen dff">{{panduan}}分</view>
+</view>
+
+<view class="daan">
+    <view class="left">正确答案：</view>
+     <view class="right" bindtap="quanbu">{{cuowuti}}</view>
+
+</view>
+
+<view class="{{list}}" wx:for="{{quanbu1}}" wx:for-item="item1" >
+        <view class="ztitle" style="width:100%;height:auto;">
+            {{item1.inum+1}}、{{item1.title}}
+            <text class="ff" wx:if="{{item1.title_type==1}}">[选择题]</text>
+            <text class="ff" wx:if="{{item1.title_type==2}}">[多选题]</text>
+            <text class="ff" wx:if="{{item1.title_type==3}}">[判断题]</text>
+        </view>
+    
+         <view class="huida"  style="width:100%;">
+            <view style="float:none;padding-bottom:20rpx;"> 你的回答为: 
+            <text class="f11" wx:if="{{item1.is_right==false}}">×</text>
+            <view class="f" wx:if="{{item1.is_right==true}}">
+            
+                <image src="https://www.dudao360.com/tmp/rightd.png" class="img"></image>
+            
+            </view>
+            
+            
+            </view>
+            <view wx:for="{{item1.youranswer}}" style="float:none;" class="view">
+               <text class="" wx:if="{{item.option=='错'}}">B.错</text>
+                   <text class="" wx:elif="{{item.option=='对'}}">A.对</text>
+                   <text wx:else=""> {{item.option}}.{{item.content}}</text>
+        
+            </view>
+
+         
+
+        </view>
+
+        
+        
+        <view class="huidad" style="">
+            
+             <view class="zhengque"> 正确回答为:</view>
+
+           
+           <view wx:for="{{item1.shouldbe}}"  class="o2" style="float:none;">
+                <!--<view class="o1" style="float:left; height:30px;color:#dd2c32"> </view>-->
+                   <text class="" wx:if="{{item.option=='错'}}">B.错</text>
+                   <text class="" wx:elif="{{item.option=='对'}}">A.对</text>
+                   <text wx:else=""> {{item.option}}.{{item.content}}</text>
+            </view>
+
+
+            <view class="jiexi">
+                  
+                  <view class="textjiexi" wx:if="{{item1.jiexiti !=='暂无'&&item1.jiexiti!=='无'}}"><view class="jiexi1">答案解析：</view>{{item1.jiexiti}}</view>
+                  <view class="textjiexi" wx:elif="{{item1.jiexiti=='暂无'}}"></view>
+                   <view class="textjiexi" wx:elif="{{item1.jiexiti=='无 '}}"><view class="jiexi1"></view></view>
+            
+            
+            </view>
+                <view class="jiexi"  wx:if="{{item1.chuchu==''}}">
+                 
+                 
+                  <text class="textjiexi"></text>
+            
+            
+            </view>
+                  <view class="jiexi" wx:elif="{{item1.chuchu!=''}}">
+                 
+                   <view class="textjiexi"> <view class="jiexi1">规则出处：</view>{{item1.chuchu}}</view>
+               
+           
+            
+            </view>
+        
+        </view>
+        
+      
+</view>
+
+
+<view class="{{listq}}" wx:for="{{cuowu1}}" wx:for-item="item1" >
+        <view class="ztitle" style="width:100%;height:auto;">
+            {{item1.inum+1}}、{{item1.title}}
+            <text class="ff" wx:if="{{item1.title_type==1}}">[选择题]</text>
+            <text class="ff" wx:if="{{item1.title_type==2}}">[多选题]</text>
+            <text class="ff" wx:if="{{item1.title_type==3}}">[判断题]</text>
+        </view>
+    
+         <view class="huida"  style="width:100%;">
+            <view style="float:none;padding-bottom:20rpx;"> 你的回答为: 
+            <text class="f11" wx:if="{{item1.is_right==false}}">×</text>
+            <view class="f" wx:if="{{item1.is_right==true}}">
+                 <image src="https://www.dudao360.com/tmp/rightd.png" class="img"></image>
+            
+            </view>
+            
+            
+            </view>
+            <view wx:for="{{item1.youranswer}}" style="float:none;" class="view">
+             
+               <text class="" wx:if="{{item.option=='错'}}">B.错</text>
+                   <text class="" wx:elif="{{item.option=='对'}}">A.对</text>
+                   <text wx:else=""> {{item.option}}.{{item.content}}</text>
+            </view>
+
+           
+        
+        </view>
+
+        
+        
+        <view class="huidad" style="">
+            
+             <view class="zhengque"> 正确回答为:</view>
+
+           
+           <view wx:for="{{item1.shouldbe}}"  class="o2" style="float:none;">
+                <!--<view class="o1" style="float:left; height:30px;color:#dd2c32"> </view>-->
+               <text class="" wx:if="{{item.option=='错'}}">B.错</text>
+                   <text class="" wx:elif="{{item.option=='对'}}">A.对</text>
+                   <text wx:else=""> {{item.option}}.{{item.content}}</text>
+            </view>
+
+                <view class="jiexi">
+                 
+                 <view class="textjiexi" wx:if="{{item1.jiexiti!=' '&&item1.jiexiti!='无'}}"><view class="jiexi1">答案解析：</view>{{item1.jiexiti}}</view>
+                  <view class="textjiexi" wx:elif="{{item1.jiexiti==''}}"> <view class="jiexi1"></view></view>
+                    <view class="textjiexi" wx:elif="{{item1.jiexiti=='无 '}}"><view class="jiexi1"></view></view>
+            
+            
+            </view>
+                     <view class="jiexi"  wx:if="{{item1.chuchu==''}}">
+                 
+                 
+                  <text class="textjiexi"></text>
+            
+            
+            </view>
+                  <view class="jiexi" wx:elif="{{item1.chuchu!=''}}">
+                 
+                   <view class="textjiexi"> <view class="jiexi1">规则出处：</view>{{item1.chuchu}}</view>
+               
+           
+            
+            </view>
+        
+        </view>
+        
+
+</view>
+
+
+<loading hidden="{{hiddenLoading}}">正在加载</loading>
+
+
+<!--<view class="fenxaingtap">
+<view class="fo">
+   <view class="fenxaingtapcont">你已经击败全国 <text class="poil"> 90% </text> 的对手，</view>
+   <view class="fenxaingtapcont">恭喜你通过本次考试</view>
+</view>
+       <image src="https://www.dudao360.com/tmp/tap.png" class="fenxaingtaptu"></image>
+<view class="foo">
+        <button open-type="share"  class="fenxiang">分享</button>
+        <view  class="fenxiang1">查看详情</view>
+</view>
+</view>-->
+
+

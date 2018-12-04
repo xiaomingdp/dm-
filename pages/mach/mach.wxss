@@ -1,0 +1,4 @@
+/* pages/mach/mach.wxss */
+.box{width:60%;height:auto;background:#e85552;border-radius: 10px;position: absolute;top:150px;left:20%;z-index: 1002;}
+.box view{text-align: center;}
+.box button{margin: 15px;}

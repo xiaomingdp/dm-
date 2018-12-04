@@ -1,0 +1,215 @@
+<view class="{{classname1}}" id="sor">
+
+<view class="c1"></view>
+
+<view class="cc">
+  <view class="top">
+    <!--<view class="top2" bindtap="sub">提交</view>-->
+    <view class="top3">
+      <text style="color:#333;">倒计时:</text>
+     <text> 0{{hous}}:{{fen}}:{{miao}}</text></view>
+    <view class="top1">{{cont}}/{{zong}}</view>
+  </view>
+</view>
+
+
+
+ <view class="{{title}}">
+  {{yi}}
+</view> 
+
+<view class="block block1 xuanze" wx:for="{{list1}}" wx:for-item="item1" wx:for-index="id"  id="idr{{id}}" bindscroll="kou">
+        <view class="se" wx:if="{{id % 2==0&&item1.title_type==1}}" style="background:#f4f4f4;padding-top:20rpx;">
+            <view class="list1" wx:if="{{item1.title_type==1}}" id='{{item1.info_num}}'>
+                  <view class="listtitle" id='{{item1.info_num}}'>{{id+1}}.{{item1.title}}</view>
+                  <radio-group class="radio-group" bindchange="">
+                  
+                      <label class="radio" wx:for="{{item1.options}}" wx:key="*this">
+                        <view  class="reo" data-info_id='{{item.info_id}}' data-id='{{id}}' data-ans='{{index}}' data-titletype='{{item1.title_type}}' bindtap="ff"  id="{{id}}">
+                          <radio value="{{item.content}}" checked="{{gg}}" class="qw" />
+                          <text class="wenzi" wx:if="{{item.order==1}}">A.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==2 }}">B.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==3 }}">C.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==4}}">D.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==5}}">E.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==6}}">F.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==6}}">G.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==6}}">H.{{item.content}}</text>
+                          <text class="wenzi" wx:if="{{item.order==7}}">I.{{item.content}}</text>
+                        </view>
+                      </label>
+                
+                  </radio-group>
+                  <view class="a1"></view>
+            </view>
+        </view>
+
+        <view class="se" wx:else="{{id % 2 !=0&&item1.title_type==1}}" style="background:#fff;padding-top:20rpx;">
+            <view class="list1" wx:if="{{item1.title_type==1}}" id='{{item1.info_num}}'>
+              <view class="listtitle" id='{{item1.info_num}}'>{{id+1}}.{{item1.title}}</view>
+              <radio-group class="radio-group" bindchange="">
+              
+                  <label class="radio" wx:for="{{item1.options}}" wx:key="*this">
+                    <view  class="reo" data-info_id='{{item.info_id}}' data-id='{{id}}' data-ans='{{index}}' data-titletype='{{item1.title_type}}' bindtap="ff"  id="{{id}}">
+                      <radio value="{{item.content}}" checked="{{gg}}" class="qw" />
+                      <text class="wenzi" wx:if="{{item.order==1}}">A.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==2 }}">B.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==3 }}">C.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==4}}">D.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==5}}">E.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==6}}">F.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==6}}">G.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==6}}">H.{{item.content}}</text>
+                      <text class="wenzi" wx:if="{{item.order==7}}">I.{{item.content}}</text>
+                    </view>
+                  </label>
+            
+              </radio-group>
+              <view class="a1"></view>
+            </view>
+        </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- </scroll-view>  -->
+<view class="{{title}}">
+
+  {{er}}
+</view>
+<view class="block  duoxuan" wx:for="{{list2}}" wx:for-item="item1" wx:for-index="id" >
+<view class="se" wx:if="{{id % 2==0&&item1.title_type==2}}" style="background:#f4f4f4;padding-top:20rpx;">
+  <view class="list1" wx:if="{{item1.title_type==2}}">
+    <view class="listtitle">{{id+1}}.{{item1.title}}</view>
+    <checkbox-group class="radio-group" bindchange="radioChange" id="{{id+list1.length}}">
+      <label class="radio" wx:for="{{item1.options}}" wx:key="*this">
+        <view class="reo"  >
+          <checkbox value="{{index}}" class="qw"  checked="{{gg}}"/>
+          <text class="wenzi" wx:if="{{item.order==1}}">A.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==2}}">B.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==3}}">C.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==4}}">D.{{item.content}}</text>
+           <text class="wenzi" wx:if="{{item.order==5}}">E.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">F.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">G.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">H.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==7}}">I.{{item.content}}</text>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="a1"></view>
+  </view>
+    </view>
+
+
+    <view class="se" wx:if="{{id % 2!=0&&item1.title_type==2}}" style="background:#fff;padding-top:20rpx;">
+  <view class="list1" wx:if="{{item1.title_type==2}}">
+    <view class="listtitle">{{id+1}}.{{item1.title}}</view>
+    <checkbox-group class="radio-group" bindchange="radioChange" id="{{id+list1.length}}">
+      <label class="radio" wx:for="{{item1.options}}" wx:key="*this">
+        <view class="reo"  >
+          <checkbox value="{{index}}" class="qw"  checked="{{gg}}"/>
+          <text class="wenzi" wx:if="{{item.order==1}}">A.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==2}}">B.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==3}}">C.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order==4}}">D.{{item.content}}</text>
+           <text class="wenzi" wx:if="{{item.order==5}}">E.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">F.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">G.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==6}}">H.{{item.content}}</text>
+            <text class="wenzi" wx:if="{{item.order==7}}">I.{{item.content}}</text>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="a1"></view>
+  </view>
+    </view>
+</view>
+<view class="{{title}}">
+
+  {{san}}
+</view>
+<view class="block block1 panduan" wx:for="{{list3}}" wx:for-item="item1" wx:for-index="id" style="{{se}}"  id="idsan{{id}}">
+  <view class="se" wx:if="{{id % 2==0&&item1.title_type==3}}" style="background:#f4f4f4;padding-top:20rpx;">
+  <view class="list1" wx:if="{{item1.title_type==3}}" id='{{item1.info_num}}'>
+    <view class="listtitle" id='{{item1.info_num}}'>{{id+1}}.{{item1.title}}</view>
+    <radio-group class="radio-group"  checked="{{gg}}" bindchange="">
+      <label class="radio" wx:for="{{item1.options}}" wx:key="*this"   checked="{{gg}}">
+        <view  class="reo" data-info_id='{{item.info_id}}' data-id='{{id+list1.length+list2.length}}' data-ans='{{index}}' data-titletype='{{item1.title_type}}' bindtap="bb"   checked="{{gg}}" id="{{id+list1.length+list2.length}}">
+          <radio value="{{item.content}}"  class="qw"    checked="{{gg}}"/>
+          <text class="wenzi" wx:if="{{item.order=='1'}}">A.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order=='2'}}">B.{{item.content}}</text>
+        </view>
+      </label>
+    </radio-group>
+    <view class="a1"></view>
+  </view>
+   </view>
+
+     <view class="se" wx:if="{{id % 2!=0&&item1.title_type==3}}" style="background:#fff;padding-top:20rpx;">
+  <view class="list1" wx:if="{{item1.title_type==3}}" id='{{item1.info_num}}'>
+    <view class="listtitle" id='{{item1.info_num}}'>{{id+1}}.{{item1.title}}</view>
+    <radio-group class="radio-group"  checked="{{gg}}" bindchange="">
+      <label class="radio" wx:for="{{item1.options}}" wx:key="*this"   checked="{{gg}}">
+        <view  class="reo" data-info_id='{{item.info_id}}' data-id='{{id+list1.length+list2.length}}' data-ans='{{index}}' data-titletype='{{item1.title_type}}' bindtap="bb"   checked="{{gg}}"  id="{{id+list1.length+list2.length}}">
+          <radio value="{{item.content}}"  class="qw"    checked="{{gg}}"/>
+          <text class="wenzi" wx:if="{{item.order=='1'}}">A.{{item.content}}</text>
+          <text class="wenzi" wx:if="{{item.order=='2'}}">B.{{item.content}}</text>
+        </view>
+      </label>
+    </radio-group>
+    <view class="a1"></view>
+  </view>
+   </view>
+</view>
+<view class="dice"></view>
+
+  <view class="sub" style="{{zindex}}">
+    <view class="left" bindtap="zanting">{{zanting}}</view>
+    <button class="right" bindtap="sub" disabled="{{disabled}}">提交</button>
+    <view class="classname" style="position:absolute"></view>
+</view>
+
+<view class="{{tan}}"></view>
+<view class="classname" style="height:{{height}}"></view>
+
+<loading hidden="{{hiddenLoading}}">正在加载</loading>
+
+
+
+<view class="{{chuangg}}">
+    <view class="tishi">提示</view>
+    <view class="t">
+          答题时间到<br/>
+          是否立即提交？
+
+
+    
+    </view>
+<view class="lcxia">
+    <view class="tijiao" bindtap="chongxin">
+     重新答题
+      
+    </view>
+     <view class=" dd" bindtap="ctijiao">
+        立即提交
+    </view>
+
+</view>
+</view>
+  <!--<modal title="提示" hidden="{{modalHidden}}" confirm-text="立即提交" cancel-text="重新答题"
+  bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel" no-cancel="{{modalHidden}}"> 答题时间到<br/>
+          是否立即提交？</modal>
+</view>-->
+
+</view>

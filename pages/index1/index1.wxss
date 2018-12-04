@@ -1,0 +1,48 @@
+/**index.wxss**/
+page{font-size: 28rpx;} 
+text {
+  font-family: "思源黑体";
+  font-size: 28rpx;
+}
+
+.btn{width:240rpx;height: 60rpx;background:blue;line-height: 60rpx;text-align: center;color: #fff;margin-top: 300rpx}
+.p1{width:100%;margin: 0 auto;text-align: center;padding-top: 30rpx;color:#e85552;position: relative;}
+.div{width:100%;height:auto;}
+.div1{width:600rpx;height:600rpx;margin: 0 auto;text-align: center;position: relative;}
+.ksishi{position: absolute;left:130rpx;top: 121rpx;color:#fff;}
+.chuang{position:fixed;top:323rpx;left:110rpx;background:#fff;width:550rpx;height:240rpx;border-radius: 10rpx;color:#333;text-align: center;z-index: 999;border: 1px solid #dddbdb;}
+.t{font-weight: 300;width:100%;
+height:133rpx;
+
+border-bottom: 1px solid #dddbdb;
+line-height: 133rpx;
+}
+.tijiao{text-align: center;margin-left: 20rpx;float: left;color:#fe002a;font-weight: 900;width: 50%;border-right:1px solid #dddbdb;}
+.dd{text-align: center;margin-right: 60rpx;float: right;color: #00f93b;font-weight: 900;}
+.lcxia{width:100%;height: 70rpx;line-height: 70rpx;overflow: hidden;}
+.tishi{padding-top: 17rpx;}
+.pdf{pointer-events: none;}
+.annu{width:50%;
+height:50%;
+color:#fff;
+margin: 0 auto;
+margin-top:300rpx;
+
+}
+.start_button{border: 0 !important;background: #fff !important;outline: none;position: relative;width:50%;
+height:50%;
+color:#fff;
+margin: 0 auto;
+margin-top:300rpx;padding:0;}
+.start_button :after{border:1px solid #fff !important;}
+button::after {border: 0;}
+.fenxiang{position: absolute;left:186rpx;top: 136rpx;color:#e85552; width:250rpx;height:60rpx;border:1px solid #e85552;line-height: 60rpx;border-radius: 60rpx;font-size: 28rpx;}
+.divv{display: none;}
+.rty{width:100%;height:200rpx;background: red;position: absolute;bottom:0;left:0;z-index: 99999999999 !important;}
+.fenxaingtap{width:100%;height:100%;position: fixed;top:224rpx;left:85rpx}
+.fenxaingtaptu{width: 100%;height:100%;z-index: 600;}
+.fo{position: absolute;top:124rpx;left:60rpx;line-height:60rpx;color:#fff;font-size: 36rpx}
+.poil{font-size: 68rpx}
+.fenxiang{position: absolute;top:412rpx;left:158rpx;line-height:60rpx;color:#fff;background: #ffbe00;width:300rpx}
+.fenxiang1{position: absolute;top:530rpx;left:158rpx;line-height:60rpx;color:#fff;background: #ffbe00;width:300rpx;text-align: center;border-radius: 10rpx;}
+

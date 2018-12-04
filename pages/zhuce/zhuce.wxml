@@ -1,0 +1,95 @@
+
+<view class="div">
+    <view class="div1">
+   
+    <image src="../img/logo_100px.png" style="width:50%;height:50%;color:#fff;margin-top: 80rpx;"></image>
+    <view class="p1">
+ 
+        新三板董秘助手
+        
+        </view>
+
+    </view>
+
+
+</view>
+
+
+
+<view class="logn">
+ 
+ 
+  
+  
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array1}}" class="ss">
+           <image src="https://www.dudao360.com/tmp/yonghuleix.png" class="imgpo"></image>
+           <view class="line"></view>
+            <view class="picker" style="text-align: left; padding-left:100rpx;{{color}}">
+             {{horder}} {{array1[index]}}
+            </view>
+      </picker>
+
+  <view class="ss">
+   <image src="https://www.dudao360.com/tmp/40pxshouji.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入11位手机号码" bindinput="name1" value="{{name1}}" bindfocus="ff" bindblur="namee" maxlength="11" focus="rt" type="number"/>
+    <image src="https://www.dudao360.com/tmp/shanchu1.png" class="{{shanchu}}" bindtap="shanchu"></image>
+  </view>
+  <view class="ss">
+   <image src="https://www.dudao360.com/tmp/duanxyanma.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入短信验证码" bindinput="name2" value="{{name2}}" bindfocus="ff" bindblur="name" style="padding-right:163rpx;"  type="number"/>
+    <button class="{{yanz}}" bindtap="{{yanzyanz}}" disabled="{{disabled}}" form-type="submit" timeStamp="10000">{{yanzzi}}</button>
+     
+  </view>
+<view class="ss">
+   <image src="https://www.dudao360.com/tmp/mima40px.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入6-16位密码" bindinput="name3" value="{{name3}}" bindfocus="ff" bindblur="name"  password="{{mimaleix}}"/>
+     <image src="{{yanjing1}}" class="{{yanjing}}"  bindtap="yanjing"></image>
+  </view>
+
+   <view class="{{ss}}">
+   <image src="qs1.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入证券代码" bindinput="name4" value="{{name4}}" bindfocus="ff" bindblur="name" type="number"/>
+   </view>
+
+    <view class="{{ss}}">
+   <image src="qsd2.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入证券简称" bindinput="name5" value="{{name5}}" bindfocus="ff" bindblur="name" />
+   </view>
+     
+
+     
+     
+      <picker bindchange="picker" value="{{index1}}" range="{{brokerNameArray}}" class="{{as}}" style="margin-top:46rpx;">
+       <image src="qsdf3.png" class="imgpo"></image>
+       <view class="line"></view>
+            <view class="picker" style="text-align: left;padding-left:88rpx;">
+            <text class="{{sso}}">{{horderr}}</text><text class="{{ssoo}}">券商:</text> {{brokerNameArray[index1]}}
+            </view>
+      </picker>
+
+
+     
+    
+   
+
+    
+
+      <view class="ss">
+   <image src="https://www.dudao360.com/tmp/lianxiren.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入联系人" bindinput="name6" value="{{name6}}" bindfocus="ff" bindblur="name" />
+  </view>
+  <button class="{{btn}}" bindtap="zhuce">注册</button>
+  
+
+  
+</view>
+
+
+
+

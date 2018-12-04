@@ -1,0 +1,31 @@
+{
+  
+ 
+
+   "tabBar": {
+     
+    "list": [{
+      "pagePath": "pages/index/index",
+      "borderStyle":"#000",
+      "text": "信息披露",
+      "color":"red",
+      "iconPath":"images/icon2.png",
+      "selectedIconPath":"images/icon2.png"
+      
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "我的",
+       "color":"red",
+      "iconPath":"images/icon1.png",
+      "selectedIconPath":"images/icon1.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+
+ 
+}
+

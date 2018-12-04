@@ -1,0 +1,7 @@
+<scroll-view>
+
+  <view class="view1"  bindscroll="scroll" style="height:200px">
+ 
+  </view>
+
+</scroll-view>  

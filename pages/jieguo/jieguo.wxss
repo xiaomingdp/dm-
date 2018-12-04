@@ -1,0 +1,45 @@
+/**index.wxss**/
+page{font-size: 28rpx;} 
+text {
+  font-family: "思源黑体";
+  font-size: 28rpx;
+}
+
+.fenshu{width:100%;height:240rpx;line-height: 240rpx;text-align: center;font-size: 84rpx;color:red;}
+.zom{width:100%;height:80rpx;text-align: center;border-bottom:1px solid #333;}
+.zom view{width:25%;float: left;text-align: center;line-height: 80rpx;border-right: 1px solid #333;box-sizing: border-box} 
+.zomm{width: 100%;}
+.zomm .zom1{padding: 10rpx;}
+.daan{width:100%;height:60rpx;line-height: 60rpx;margin-top: 20rpx;padding-left: 15rpx;padding-right: 15rpx;box-sizing: border-box;}
+.daan .left{float: left;} 
+.daan .right{float: right;color:#e64340;} 
+.list{width:100%;height:auto;box-sizing: border-box；}
+.ztitle{padding-left: 15rpx;padding-top: 10rpx;float: left;height:auto;width:100%;position: relative;box-sizing: border-box;line-height: 48rpx;padding-right: 15rpx;font-weight: 900;}
+.tixing{float: left;padding-right: 15rpx;padding-top: 10rpx;height:auto;position: absolute;top:0%;right:15rpx;}
+.dff{color: #e64340;}
+.huida{width:100%;height:auto;padding-left: 15rpx;overflow: hidden;box-sizing: border-box;padding-top: 20rpx;overflow: hidden;position: relative;padding-right: 15rpx;}
+.huidad{padding-left:15rpx;}
+.list144{display: none;}
+.listq{display: none;}
+.o1{float: left;}
+.o2{float: left;line-height: 50rpx;font-size: 24rpx;}
+.view view{float: left;padding-bottom: 20rpx;line-height: 31rpx;font-size: 24rpx;}
+.zhengque{color:#dd2c32}
+.classname{padding-left: 15rpx;display: inline-block}
+.zhengque{padding-bottom: 20rpx;}
+.view{padding-bottom:22rpx;}
+.f11{color: red;font-weight: 900;font-size: 33rpx;}
+.f{color: #0dcb50;font-weight: 900;}
+.img{width:39rpx;height:30rpx;position: absolute;top:21rpx;left:206rpx;}
+.fenxaingtap{width:600rpx;height:800rpx;position: fixed;top:224rpx;left:85rpx}
+.fenxaingtaptu{width: 100%;height:100%;z-index: 600;}
+.fo{position: absolute;top:124rpx;left:60rpx;line-height:60rpx;color:#fff;font-size: 36rpx}
+.poil{font-size: 68rpx}
+.fenxiang{position: absolute;top:412rpx;left:158rpx;line-height:60rpx;color:#fff;background: #ffbe00;width:300rpx}
+.fenxiang1{position: absolute;top:530rpx;left:158rpx;line-height:60rpx;color:#fff;background: #ffbe00;width:300rpx;text-align: center;border-radius: 10rpx;}
+.jiexi{padding-right: 15rpx;}
+.textjiexi{font-size:24rpx;line-height:40rpx}
+.jiexi1{font-weight: 900;padding-bottom: 20rpx;padding-top: 20rpx;}
+
+
+

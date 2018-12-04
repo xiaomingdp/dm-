@@ -1,0 +1,56 @@
+<!--<button class="btn" bindtap="kaishi">开始</button>-->
+ 
+<view class="{{div}}">
+    <view class="div1">
+    
+   
+    <button class="start_button"  bindtap="kaishi" disabled="{{disabled}}">
+          <text class="ksishi" bindtap="" >开始</text>
+          <image src="https://www.dudao360.com/tmp/kaishianmiu.png" style="width:100%;height:100%;color:#fff;" bindtap="kaishi" class="{{pdf}}"></image>
+
+      
+    </button>
+    
+    <view class="p1">
+ 
+        总分100分，限时2小时
+        <view class="ffdd"  bindtap="fenxiang">
+       
+        </view>
+        
+        </view>
+
+    </view>
+
+
+</view>
+<loading hidden="{{hiddenLoading}}">正在初始化</loading>
+<view class="classname" bindtap="vv"></view>
+<!--<view class="rty">ggggg</view>-->
+<!--<image src="https://www.dudao360.com/tmp/fenxiang.png" style="width:100%;height:100%"></image>-->
+  <!--<image src="https://www.dudao360.com/tmp/lop.jpg" style="" bindtap="lok" class="{{psdf}}"></image>
+
+  
+
+<!--<view class="chuang">
+    <view class="tishi">提示</view>
+    <view class="t">
+          答题时间到<br/>
+          是否立即提交？
+
+
+    
+    </view>
+<view class="lcxia">
+    <view class="tijiao" bindtap="chongxin">
+     重新答题
+      
+    </view>
+     <view class=" dd" bindtap="ctijiao">
+        立即提交
+    </view>
+
+</view>
+</view>-->
+
+

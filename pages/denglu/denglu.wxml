@@ -1,0 +1,42 @@
+
+<view class="div">
+    <view class="div1">
+   
+    <image src="https://www.dudao360.com/tmp/logo_100px.png" style="width:50%;height:50%;color:#fff;margin-top: 80rpx;"></image>
+    <view class="p1">
+ 
+        新三板董秘助手
+        
+        </view>
+
+    </view>
+
+
+</view>
+
+
+
+<view class="logn">
+ 
+  <view class="ss">
+   <image src="https://www.dudao360.com/tmp/40pxshouji.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="username" placeholder="请输入11位手机号码" bindinput="name" value="{{username}}"  bindblur="username" type="number" bindconfirm="mk" bindfocus="fouss" />
+    <image src="https://www.dudao360.com/tmp/shanchu1.png" class="{{shanchu}}" bindtap="shanchu"></image>
+  </view>
+<view class="ss">
+   <image src="https://www.dudao360.com/tmp/mima40px.png" class="imgpo"></image>
+   <view class="line"></view>
+    <input class="password" placeholder="请输入6-16位密码" bindinput="password1" value="{{password}}" bindfocus="f1" bindblur="password2"  password="{{mimaleix}}"/>
+    <image src="{{yanjing1}}" class="{{yanjing}}"  bindtap="yanjing"></image>
+  </view>
+  <button class="{{btn}}" bindtap="btn">绑定账号</button>
+
+  <view class="w1"bindtap="wangji">忘记密码？</view>
+  <view class="w2" bindtap="zhuce">注册账号</view>
+  
+</view>
+
+
+<view class="classname" style="width:100%;"></view>
+

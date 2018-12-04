@@ -1,0 +1,66 @@
+<view class="all">
+    <view class="head">
+        <view class="top">
+          <view class="touxiang"style="background:url({{touxiang}}); no-repeat;background-size:100%">
+          </view>
+          <view class="headname">{{wxname}}</view>
+        </view>
+
+
+    </view>
+
+    <view class="list" id="list">
+     
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array1}}" class="list">
+            <view class="picker" style="text-align: left; padding-left:15rpx;">
+            类型:<text style="font-size:26rpx;color:#333;padding-left:38rpx;"> {{array1[index]}}</text>
+            </view>
+      </picker>
+    
+    </view>
+   <view class="list">
+        <view class="seachlist1">
+                <text class="text">姓名:</text>
+                <input   class="input1" value="{{input2}}" bindinput="input2" placeholder="{{plac}}"/>
+
+         </view>
+     </view>
+    <view class="list">
+     
+       <view class="seachlist1">
+                <text class="text">手机:</text>
+                <input   class="input1" value="{{input3}}" bindinput="input3" disabled="true" placeholder="{{plac}}" style="color:red;"/>
+
+         </view>
+    </view>
+    <view class="{{list}}">
+     
+       <view class="seachlist1">
+                <text class="text">证券代码:</text>
+                <input   class="input1 input2" value="{{input4}}" bindinput="input4" placeholder="{{plac}}"  type="number"/>
+
+      </view>
+    </view>
+     <view class="{{list}}">
+     
+       <view class="seachlist1">
+                <text class="text">证券简称:</text>
+                <input   class="input1 input2" value="{{input5}}" bindinput="input5" placeholder="{{plac}}"/>
+
+      </view>
+    </view>
+     <view class="{{list1}}" id="{{list1}}">
+     
+      <picker bindchange="picker1" value="{{index1}}" range="{{brokerNameArray}}" >
+            <view class="picker" style="text-align: left;padding-left:15rpx;">
+          
+            <text class="{{sso}}">主办券商:</text><text class="{{ssoo}}">券商:</text> <text style="font-size:26rpx;color:#333"> {{brokerNameArray[index1]}}</text>
+            </view>
+      </picker>
+    
+    </view>
+    <view class="list" style="margin-top:20px;padding-right: 20rpx;padding-left: 20rpx;box-sizing: border-box;border-ridus:15rpx;">
+      <view class="out"style="text-algin:center;margin:0 auto;" bindtap="baocun">保存</view>
+    
+    </view>
+</view>
