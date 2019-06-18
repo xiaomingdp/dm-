@@ -22,8 +22,6 @@ Page({
     yanjing1: "https://www.dudao360.com/tmp/yanjing.png",
     mimaleix: "false",
     btn: "btn"
-
-
   },
   wangji: function () {
     wx.navigateTo({
@@ -42,14 +40,8 @@ Page({
   },
   shanchu: function () {
     this.setData({
-
       username: "",
-
     })
-
-  },
-  username: function () {
-
   },
   fouss: function () {
     if (this.data.username != "") {
